@@ -1,0 +1,36 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "SCSS/tablette.css.map": true,
+    "SCSS/style.css.map": true,
+    "SCSS/desktop.css.map": true,
+    "SCSS/tablette.css": true,
+    "SCSS/style.css": true,
+    "SCSS/desktop.css": true,
+    "SCSS/mixins.css": true,
+    "SCSS/mixins.css.map": true,
+    "SCSS/variables.css.map": true,
+    "SCSS/variables.css": true,
+    ".vscode": true
+},
+  "hide-files.files": [
+    "SCSS/tablette.css.map",
+    "SCSS/style.css.map",
+    "SCSS/desktop.css.map",
+    "SCSS/tablette.css",
+    "SCSS/style.css",
+    "SCSS/desktop.css",
+    "SCSS/mixins.css",
+    "SCSS/mixins.css.map",
+    "SCSS/variables.css.map",
+    "SCSS/variables.css",
+    ".vscode"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}

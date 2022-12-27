@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+}
+body {
+  @include texts;
+  background-color: white;
+  padding: 0;
+}
+// h2 {
+//   padding-left: 20px;
+// }
+.page_wrapper {
+  min-width: 250px;
+  width: 100%;
+}
+
+/* AUTRE*/
+.logo_OMF {
+  @include Flexbox(row, center, center);
+  width: 100%;
+  padding: 15px 0;
+  img {
+    max-width: 150px;
+  }
+  a {
+    position: absolute;
+    left: 25px;
+    font-size: 20px;
+    color: black;
+  }
+}
+
+.location {
+  @include Flexbox(row, center, center);
+  height: 55px;
+  box-shadow: 0px 2px 6px #ddd inset;
+  background-color: $background-dark;
+  span {
+    @include texts;
+    @include Flexbox;
+    font-size: 18px;
+  }
+  i {
+    @include Flexbox;
+    font-size: 20px;
+    padding-right: 15px;
+  }
+}
+
+.explore_restaurants {
+  background-color: $background;
+  @include Flexbox(column, center, center);
+  padding: 40px 35px;
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    padding: 10px 0 30px 0;
+  }
+  button {
+    transition-duration: 1s;
+    @include shadow;
+    @include texts;
+    @include buttons_parameters;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 25px;
+    color: $typo_color;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    &:hover {
+      background-color: lighten($primary, 10%);
+      box-shadow: 5px 5px 9px rgb(0 0 0 / 40%);
+    }
+  }
+}
+
+.functioning {
+  @include grid_box;
+  padding: 0 25px;
+  .functioning_box {
+    @include shadow;
+    @include func-box-settings;
+    @include Flexbox(row, flex-start, center);
+    .icon {
+      font-size: 22px;
+      padding: 0 25px 0 10px;
+      color: grey;
+    }
+    &:hover {
+      background-color: lighten($color: $primary, $amount: 35%);
+      cursor: pointer;
+      .icon {
+        color: darken($color: cornflowerblue, $amount: 15%);
+      }
+    }
+    .numbers_position {
+      position: relative;
+      left: -10px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: $primary;
+      @include Flexbox(row, center, center);
+    }
+    p {
+      color: white;
+    }
+  }
+}
+
+/* A REFAIRE*/
+.couleur {
+  background-color: $background;
+  .container {
+    h2 {
+      padding: 50px 20px 15px 20px;
+    }
+  }
+}
+.restaurants_grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0px 20px 50px 20px;
+  .restaurants_card {
+    @include shadow;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .new-tag {
+    position: absolute;
+    @include Flexbox(row, center, center);
+    @include new-tag;
+  }
+  .image_card {
+    img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .card_content {
+    @include Flexbox(row, flex-start, center);
+    padding: 15px;
+    div {
+      flex: 1;
+    }
+    h3 {
+      padding: 0 0 5px;
+    }
+    i {
+      @include heart;
+      padding: 0 10px;
+      &:hover {
+        @include heart_hover;
+      }
+    }
+  }
+}
+
+/*A REFAIRE*/
+footer {
+  background-color: rgb(42, 49, 45);
+  @include footer_color;
+  .footer_logo img {
+    width: 120px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(160deg)
+      brightness(110%) contrast(101%);
+  }
+  .footer_collab {
+    padding-top: 15px;
+    .footer_content {
+      display: flex;
+      flex-direction: column;
+      a {
+        display: inline;
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: white;
+        i {
+          padding-right: 10px;
+          width: 18px;
+        }
+      }
+    }
+  }
+  .footer_mentions {
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      color: white;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+/* MENU TEMPLATE */
+
+header {
+  .image_menu {
+    width: 100%;
+    height: 200px;
+    img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+  }
+}
+
+.container_menu {
+  min-width: 250px;
+  position: relative;
+  z-index: 1;
+  background-color: $background;
+  width: 100%;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  h1 {
+    @include logo_titles;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+  .menu_section {
+    padding: 20px;
+    .title {
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    hr {
+      @include hr;
+    }
+    .grid {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 15px;
+      .card {
+        @include shadow;
+        background-color: $cards_bkg;
+        border-radius: 15px;
+        .content {
+          display: flex;
+          .left {
+            padding: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            .card_title {
+              font-size: 16px;
+            }
+            .card_subtitle {
+              font-size: 16px;
+            }
+          }
+          .right {
+            display: flex;
+            align-items: flex-end;
+            .price {
+              padding: 15px 20px;
+              font-weight: bold;
+            }
+            .icon {
+              display: flex;
+              align-self: center;
+              align-items: center;
+              padding: 0 20px;
+              font-size: 22px;
+              background-color: $tertiary;
+              color: $typo_color;
+              flex: 1;
+              height: 100%;
+              border-radius: 0 15px 15px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Animation menu button*/
+@keyframes slideleft {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.icon_anim:hover {
+  //   display: flex;
+  animation: slideleft 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes icon-rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* 
+* BOUCLE @FOR
+*/
+
+@for $i from 1 through 9 {
+  .p-#{$i} {
+    animation-delay: $i * 0.1s;
+    animation-duration: $i * 0.1s;
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.p-1,
+.p-2,
+.p-3,
+.p-4,
+.p-5,
+.p-6,
+.p-7,
+.p-8,
+.p-9 {
+  animation-name: scale-up-center;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+/*
+* BOUTON DES MENU
+*/
+.button_menu {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0 40px 0;
+  .order_button {
+    transition-duration: 1s;
+    @include shadow;
+    @include texts;
+    @include buttons_parameters;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 40px;
+    color: $typo_color;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    &:hover {
+      background-color: lighten($primary, 10%);
+      box-shadow: 5px 5px 9px rgb(0 0 0 / 50%);
+    }
+  }
+}

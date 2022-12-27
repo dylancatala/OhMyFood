@@ -1,0 +1,115 @@
+/*
+* FONT-FAMILY
+*/
+@mixin logo_titles {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 28px;
+}
+@mixin texts {
+  font-family: "Roboto", sans-serif;
+}
+/* 
+* Flexbox
+*/
+@mixin Flexbox(
+  $direction: row,
+  $horizontal: flex-start,
+  $vertical: flex-start
+) {
+  display: flex;
+  flex-direction: $direction;
+  @if ($direction == "row") {
+    justify-content: $horizontal;
+    align-items: $vertical;
+  } @else {
+    align-items: $horizontal;
+    justify-content: $vertical;
+  }
+}
+
+// Buttons specs
+@mixin buttons_parameters {
+  background-color: lighten($color: #9356dc, $amount: 4%);
+  border: 0;
+}
+
+@mixin settings_buttons {
+  background-color: $tertiary;
+  height: 65px;
+  border-radius: 20px;
+}
+
+//Functioning box
+@mixin func-box-settings {
+  height: 75px;
+  border-radius: 20px;
+  background-color: $background;
+}
+
+@mixin grid_box {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+}
+
+@mixin new-tag {
+  right: 18px;
+  top: 18px;
+  text-align: center;
+  background-color: $tertiary;
+  color: darken($color: #99e2d0, $amount: 40%);
+  font-weight: bold;
+  border-radius: 5px;
+  height: 35px;
+  width: 100px;
+}
+
+@mixin footer_color {
+  color: $typo_color;
+  padding: 20px 25px 10px 25px;
+}
+
+/* REFACTORING */
+
+@mixin shadow {
+  box-shadow: 5px 5px 9px rgb(0 0 0 / 11%);
+}
+
+/* 
+* Restaurants Styles
+*/
+@mixin new-tag {
+  right: 18px;
+  top: 18px;
+  text-align: center;
+  background-color: $tertiary;
+  color: darken($color: #99e2d0, $amount: 40%);
+  font-weight: bold;
+  border-radius: 5px;
+  height: 35px;
+  width: 100px;
+}
+
+/*
+* MENU STYLES
+*/
+@mixin hr {
+  width: 40px;
+  margin: 0;
+  height: 3px;
+  background-color: $tertiary;
+  border: 0;
+  margin: 5px 0 15px 0;
+}
+
+@mixin heart {
+  font-size: 30px;
+  cursor: pointer;
+}
+@mixin heart_hover {
+  background-clip: text;
+  font-weight: 900;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  -webkit-text-fill-color: transparent;
+}
