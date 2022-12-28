@@ -20,6 +20,29 @@ body {
   background-color: white;
   padding: 0;
 }
+body .loading_spinner {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: hidding 3s forwards;
+          animation: hidding 3s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+body .loading_spinner .spinner {
+  height: 50px;
+  width: 50px;
+  border: 5px solid white;
+  border-color: #9356dc transparent #ff79da transparent;
+  border-radius: 50%;
+  -webkit-animation: rotate 3s linear;
+          animation: rotate 3s linear;
+}
 
 .page_wrapper {
   min-width: 250px;
@@ -526,6 +549,37 @@ header .image_menu img {
   box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
 }
 
+/*
+* LOADING SPINNER
+*/
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes hidding {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes hidding {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 @media screen and (min-width: 993px) {
   .page_wrapper {
     width: 100%;

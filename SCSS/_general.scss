@@ -5,6 +5,27 @@ body {
   @include texts;
   background-color: white;
   padding: 0;
+  .loading_spinner {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: hidding 3s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(black, 10%);
+    .spinner {
+      height: 50px;
+      width: 50px;
+      border: 5px solid white;
+      border-color: #9356dc transparent #ff79da transparent;
+      border-radius: 50%;
+      animation: rotate 3s linear;
+    }
+  }
 }
 .page_wrapper {
   min-width: 250px;
@@ -374,5 +395,24 @@ header {
       background-color: lighten($primary, 10%);
       box-shadow: 5px 5px 9px rgb(0 0 0 / 50%);
     }
+  }
+}
+
+/*
+* LOADING SPINNER
+*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hidding {
+  to {
+    visibility: hidden;
+    opacity: 0;
   }
 }
