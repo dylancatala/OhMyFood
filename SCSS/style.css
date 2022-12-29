@@ -386,10 +386,6 @@ header .image_menu img {
   height: 100%;
   border-radius: 0 15px 15px 0;
 }
-.container_menu .menu_section .grid .card .content .right .item_check i:hover {
-  -webkit-animation: check-rotate 1s linear;
-          animation: check-rotate 1s linear;
-}
 
 /* 
 * BOUCLE @FOR
