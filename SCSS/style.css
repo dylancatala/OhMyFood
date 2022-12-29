@@ -375,111 +375,52 @@ header .image_menu img {
   border-radius: 0 15px 15px 0;
 }
 
-/*Animation menu button*/
-@-webkit-keyframes slideleft {
-  0% {
-    transform: translateX(200px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-@keyframes slideleft {
-  0% {
-    transform: translateX(200px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-.icon_anim:hover {
-  -webkit-animation: slideleft 1s;
-          animation: slideleft 1s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-@-webkit-keyframes icon-rotate {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
-}
-
-@keyframes icon-rotate {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
-}
 /* 
 * BOUCLE @FOR
 */
 .p-1 {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
-  -webkit-animation-duration: 0.1s;
-          animation-duration: 0.1s;
 }
 
 .p-2 {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
 }
 
 .p-3 {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
 }
 
 .p-4 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
 }
 
 .p-5 {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
 }
 
 .p-6 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
 }
 
 .p-7 {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
 }
 
 .p-8 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
 }
 
 .p-9 {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
-  -webkit-animation-duration: 0.9s;
-          animation-duration: 0.9s;
 }
 
 @-webkit-keyframes scale-up-center {

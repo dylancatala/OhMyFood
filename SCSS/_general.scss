@@ -310,31 +310,6 @@ header {
   }
 }
 
-/*Animation menu button*/
-@keyframes slideleft {
-  0% {
-    transform: translateX(200px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-
-.icon_anim:hover {
-  //   display: flex;
-  animation: slideleft 1s;
-  animation-fill-mode: backwards;
-}
-
-@keyframes icon-rotate {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
-}
-
 /* 
 * BOUCLE @FOR
 */
@@ -342,7 +317,7 @@ header {
 @for $i from 1 through 9 {
   .p-#{$i} {
     animation-delay: $i * 0.1s;
-    animation-duration: $i * 0.1s;
+    // animation-duration: $i * 0.1s;
   }
 }
 
