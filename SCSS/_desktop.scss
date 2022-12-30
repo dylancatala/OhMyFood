@@ -29,15 +29,8 @@
     width: 1400px;
     margin: auto;
     .header_menu {
-      position: relative;
       i {
-        @include heart;
-        top: 45px;
-        right: 45px;
-        position: absolute;
-        &:hover {
-          @include heart_hover;
-        }
+        font-size: 30px;
       }
     }
     .grid_menu {
