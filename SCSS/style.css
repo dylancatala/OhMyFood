@@ -340,10 +340,10 @@ header .image_menu img {
   box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.11);
   background-color: white;
   border-radius: 15px;
+  overflow: hidden;
 }
 .container_menu .menu_section .grid .card .content {
   display: flex;
-  overflow: hidden;
 }
 .container_menu .menu_section .grid .card .content .left {
   padding: 15px;
@@ -361,30 +361,32 @@ header .image_menu img {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.container_menu .menu_section .grid .card .content .right {
+.container_menu .menu_section .grid .card .content .price {
   display: flex;
-  align-items: flex-end;
-  margin-right: -4rem;
-}
-.container_menu .menu_section .grid .card .content .right:hover {
-  -webkit-animation: slide-left 0.5s linear both;
-          animation: slide-left 0.5s linear both;
-}
-.container_menu .menu_section .grid .card .content .right .price {
-  padding: 15px 15px;
+  align-items: center;
+  justify-content: flex-end;
   font-weight: bold;
 }
-.container_menu .menu_section .grid .card .content .right .item_check {
+.container_menu .menu_section .grid .card .content .item_check {
   display: flex;
-  align-self: center;
+  justify-content: center;
   align-items: center;
   padding: 0 20px;
   font-size: 22px;
   background-color: #99e2d0;
   color: white;
-  flex: 1;
-  height: 100%;
+  width: 4rem;
   border-radius: 0 15px 15px 0;
+  margin-right: -4rem;
+  margin-left: 1rem;
+}
+.container_menu .menu_section .grid .card .content:hover .price {
+  -webkit-animation: slide-left 1s linear both;
+          animation: slide-left 1s linear both;
+}
+.container_menu .menu_section .grid .card .content:hover .item_check {
+  -webkit-animation: slide-left 1s linear both;
+          animation: slide-left 1s linear both;
 }
 
 /* 
@@ -541,7 +543,7 @@ header .image_menu img {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-64px);
+    transform: translateX(-58px);
   }
 }
 @keyframes slide-left {
@@ -549,7 +551,7 @@ header .image_menu img {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-64px);
+    transform: translateX(-58px);
   }
 }
 @-webkit-keyframes check-rotate {

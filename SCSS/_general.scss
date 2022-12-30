@@ -272,9 +272,9 @@ header {
         @include shadow;
         background-color: $cards_bkg;
         border-radius: 15px;
+        overflow: hidden;
         .content {
           display: flex;
-          overflow: hidden;
           .left {
             padding: 15px;
             flex: 1;
@@ -292,28 +292,32 @@ header {
               white-space: nowrap;
             }
           }
-          .right {
+          .price {
             display: flex;
-            align-items: flex-end;
+            align-items: center;
+            justify-content: flex-end;
+            // padding: 15px 15px;
+            font-weight: bold;
+          }
+          .item_check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 22px;
+            background-color: $tertiary;
+            color: $typo_color;
+            width: 4rem;
+            border-radius: 0 15px 15px 0;
             margin-right: -4rem;
-            &:hover {
-              animation: slide-left 0.5s linear both;
-            }
+            margin-left: 1rem;
+          }
+          &:hover {
             .price {
-              padding: 15px 15px;
-              font-weight: bold;
+              animation: slide-left 1s linear both;
             }
             .item_check {
-              display: flex;
-              align-self: center;
-              align-items: center;
-              padding: 0 20px;
-              font-size: 22px;
-              background-color: $tertiary;
-              color: $typo_color;
-              flex: 1;
-              height: 100%;
-              border-radius: 0 15px 15px 0;
+              animation: slide-left 1s linear both;
             }
           }
         }
@@ -412,7 +416,7 @@ header {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-64px);
+    transform: translateX(-58px);
   }
 }
 @keyframes check-rotate {
