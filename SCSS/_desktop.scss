@@ -13,6 +13,15 @@
     margin: 0;
     padding: 25px 0;
   }
+
+  header {
+    .image_menu {
+      img {
+        height: 300px;
+      }
+    }
+  }
+
   .functioning {
     display: flex;
     flex-direction: row;
@@ -28,6 +37,7 @@
   .container_menu {
     max-width: 1400px;
     margin: auto;
+    margin-top: 25px;
     .header_menu {
       i {
         font-size: 30px;
@@ -56,6 +66,7 @@
   }
 
   footer {
+    padding: 25px 0;
     .footer_logo {
       display: flex;
       flex-direction: column;

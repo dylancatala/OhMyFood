@@ -525,6 +525,9 @@ header .image_menu img {
     margin: 0;
     padding: 25px 0;
   }
+  header .image_menu img {
+    height: 300px;
+  }
   .functioning {
     display: flex;
     flex-direction: row;
@@ -539,6 +542,7 @@ header .image_menu img {
   .container_menu {
     max-width: 1400px;
     margin: auto;
+    margin-top: 25px;
   }
   .container_menu .header_menu i {
     font-size: 30px;
@@ -558,6 +562,9 @@ header .image_menu img {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 35px;
+  }
+  footer {
+    padding: 25px 0;
   }
   footer .footer_logo {
     display: flex;
