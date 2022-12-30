@@ -660,4 +660,29 @@ header .image_menu img {
   footer .footer_mentions a {
     margin-left: 15px;
   }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  footer .footer_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer_collab {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer_collab .footer_content {
+    flex-direction: row;
+  }
+  footer .footer_collab .footer_content a {
+    padding-left: 15px;
+  }
+  footer .footer_mentions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .footer_mentions a {
+    margin-left: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
