@@ -271,8 +271,11 @@ footer .footer_collab .footer_content a {
   text-decoration: none;
   color: white;
 }
+footer .footer_collab .footer_content a:hover {
+  text-decoration: underline;
+}
 footer .footer_collab .footer_content a i {
-  padding-right: 10px;
+  padding-right: 25px;
   width: 18px;
 }
 footer .footer_mentions {
@@ -283,6 +286,9 @@ footer .footer_mentions a {
   text-decoration: none;
   color: white;
   padding-bottom: 10px;
+}
+footer .footer_mentions a:hover {
+  text-decoration: underline;
 }
 
 /* MENU TEMPLATE */
@@ -356,6 +362,7 @@ header .image_menu img {
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
+  cursor: pointer;
 }
 .container_menu .menu_section .grid .card .content {
   display: flex;
@@ -393,16 +400,16 @@ header .image_menu img {
   margin-left: 1rem;
 }
 .container_menu .menu_section .grid .card .content:hover .price {
-  -webkit-animation: slide-left 1s linear both;
-          animation: slide-left 1s linear both;
+  -webkit-animation: slide-left 0.4s linear both;
+          animation: slide-left 0.4s linear both;
 }
 .container_menu .menu_section .grid .card .content:hover .item_check {
-  -webkit-animation: slide-left 1s linear both;
-          animation: slide-left 1s linear both;
+  -webkit-animation: slide-left 0.4s linear both;
+          animation: slide-left 0.4s linear both;
 }
 .container_menu .menu_section .grid .card .content:hover .fa-circle-check {
-  -webkit-animation: check-rotate 1s linear both;
-          animation: check-rotate 1s linear both;
+  -webkit-animation: check-rotate 0.4s linear both;
+          animation: check-rotate 0.4s linear both;
 }
 
 /* 

@@ -207,8 +207,11 @@ footer {
         padding-bottom: 10px;
         text-decoration: none;
         color: white;
+        &:hover {
+          text-decoration: underline;
+        }
         i {
-          padding-right: 10px;
+          padding-right: 25px;
           width: 18px;
         }
       }
@@ -221,6 +224,9 @@ footer {
       text-decoration: none;
       color: white;
       padding-bottom: 10px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -283,6 +289,7 @@ header {
         background-color: $cards_bkg;
         border-radius: 15px;
         overflow: hidden;
+        cursor: pointer;
         .content {
           display: flex;
           .left {
@@ -320,13 +327,13 @@ header {
           }
           &:hover {
             .price {
-              animation: slide-left 1s linear both;
+              animation: slide-left 0.4s linear both;
             }
             .item_check {
-              animation: slide-left 1s linear both;
+              animation: slide-left 0.4s linear both;
             }
             .fa-circle-check {
-              animation: check-rotate 1s linear both;
+              animation: check-rotate 0.4s linear both;
             }
           }
         }
