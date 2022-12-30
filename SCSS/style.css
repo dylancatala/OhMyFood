@@ -522,72 +522,6 @@ header .image_menu img {
   box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
 }
 
-/*
-* LOADING SPINNER
-*/
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes hidding {
-  to {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-@keyframes hidding {
-  to {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-/*
-* CHECK BOX
-*/
-@-webkit-keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-58px);
-  }
-}
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-58px);
-  }
-}
-@-webkit-keyframes check-rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-@keyframes check-rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
 @media screen and (min-width: 993px) {
   .page_wrapper {
     width: 100%;
@@ -684,5 +618,71 @@ header .image_menu img {
   }
   footer .footer_mentions a {
     margin-left: 15px;
+  }
+}
+/*
+* LOADING SPINNER
+*/
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes hidding {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes hidding {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+/*
+* CHECK BOX
+*/
+@-webkit-keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-58px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-58px);
+  }
+}
+@-webkit-keyframes check-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes check-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }/*# sourceMappingURL=style.css.map */

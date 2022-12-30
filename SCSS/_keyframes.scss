@@ -1,0 +1,38 @@
+/*
+* LOADING SPINNER
+*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hidding {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+/*
+* CHECK BOX
+*/
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-58px);
+  }
+}
+@keyframes check-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
