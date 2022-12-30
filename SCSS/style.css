@@ -388,6 +388,10 @@ header .image_menu img {
   -webkit-animation: slide-left 1s linear both;
           animation: slide-left 1s linear both;
 }
+.container_menu .menu_section .grid .card .content:hover .fa-circle-check {
+  -webkit-animation: check-rotate 1s linear both;
+          animation: check-rotate 1s linear both;
+}
 
 /* 
 * BOUCLE @FOR

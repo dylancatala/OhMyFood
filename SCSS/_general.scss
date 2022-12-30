@@ -319,6 +319,9 @@ header {
             .item_check {
               animation: slide-left 1s linear both;
             }
+            .fa-circle-check {
+              animation: check-rotate 1s linear both;
+            }
           }
         }
       }
