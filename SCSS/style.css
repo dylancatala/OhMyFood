@@ -385,6 +385,7 @@ header .image_menu img {
   justify-content: flex-end;
   padding-top: 25px;
   font-weight: bold;
+  transition: transform 0.5s ease-in-out;
 }
 .container_menu .menu_section .grid .card .content .item_check {
   display: flex;
@@ -398,18 +399,19 @@ header .image_menu img {
   border-radius: 0 15px 15px 0;
   margin-right: -4rem;
   margin-left: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+.container_menu .menu_section .grid .card .content .item_check .fa-circle-check {
+  transition: transform 0.5s ease-in-out;
 }
 .container_menu .menu_section .grid .card .content:hover .price {
-  -webkit-animation: slide-left 0.4s linear both;
-          animation: slide-left 0.4s linear both;
+  transform: translateX(-58px);
 }
 .container_menu .menu_section .grid .card .content:hover .item_check {
-  -webkit-animation: slide-left 0.4s linear both;
-          animation: slide-left 0.4s linear both;
+  transform: translateX(-58px);
 }
 .container_menu .menu_section .grid .card .content:hover .fa-circle-check {
-  -webkit-animation: check-rotate 0.4s linear both;
-          animation: check-rotate 0.4s linear both;
+  transform: rotate(-360deg);
 }
 
 /* 
@@ -661,40 +663,5 @@ header .image_menu img {
   }
   100% {
     transform: scale(1);
-  }
-}
-/*
-* CHECK BOX
-*/
-@-webkit-keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-58px);
-  }
-}
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-58px);
-  }
-}
-@-webkit-keyframes check-rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-@keyframes check-rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(-360deg);
   }
 }/*# sourceMappingURL=style.css.map */

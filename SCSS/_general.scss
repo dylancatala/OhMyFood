@@ -311,6 +311,7 @@ header {
             justify-content: flex-end;
             padding-top: 25px;
             font-weight: bold;
+            transition: transform 0.5s ease-in-out;
           }
           .item_check {
             display: flex;
@@ -324,16 +325,20 @@ header {
             border-radius: 0 15px 15px 0;
             margin-right: -4rem;
             margin-left: 1rem;
+            transition: transform 0.5s ease-in-out;
+            .fa-circle-check {
+              transition: transform 0.5s ease-in-out;
+            }
           }
           &:hover {
             .price {
-              animation: slide-left 0.4s linear both;
+              transform: translateX(-58px);
             }
             .item_check {
-              animation: slide-left 0.4s linear both;
+              transform: translateX(-58px);
             }
             .fa-circle-check {
-              animation: check-rotate 0.4s linear both;
+              transform: rotate(-360deg);
             }
           }
         }
