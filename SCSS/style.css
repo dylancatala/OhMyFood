@@ -246,6 +246,7 @@ body .loading_spinner .spinner {
   font-weight: 900;
   background-image: linear-gradient(#ff79da, #9356dc);
   -webkit-text-fill-color: transparent;
+  transition-duration: 0.3s;
 }
 
 /*A REFAIRE*/
@@ -328,6 +329,7 @@ header .image_menu img {
   font-weight: 900;
   background-image: linear-gradient(#ff79da, #9356dc);
   -webkit-text-fill-color: transparent;
+  transition-duration: 0.3s;
 }
 .container_menu h1 {
   font-family: "Shrikhand", cursive;
