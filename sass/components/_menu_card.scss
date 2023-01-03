@@ -6,14 +6,15 @@
   cursor: pointer;
   display: flex;
   padding: 15px;
-  flex-wrap: wrap;
+  margin: 1rem 0;
 
   .card_content {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    width: calc(100%);
+    animation: normal-size 0.5s ease-in;
 
     .card_title {
       @include TextEllipsis;
@@ -27,11 +28,11 @@
   }
 
   .card_price {
+
+    margin-left: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
-    padding-top: 25px;
-    padding-left: 15px;
     font-weight: bold;
     transition: transform 0.5s ease-in-out;
   }
@@ -57,7 +58,8 @@
 
   &:hover {
     .card_content {
-      width: 200px;
+      // width: calc(60%);
+      animation: resizing 0.5s linear both;
     }
 
     .card_price {
@@ -71,5 +73,22 @@
     .fa-circle-check {
       transform: rotate(-360deg);
     }
+  }
+}
+
+
+@keyframes resizing {
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes normal-size {
+  from {
+    width: 70%;
+  }
+
+  to {
+    width: 100%;
   }
 }

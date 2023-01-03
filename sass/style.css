@@ -412,14 +412,16 @@ button:hover {
   cursor: pointer;
   display: flex;
   padding: 15px;
-  flex-wrap: wrap;
+  margin: 1rem 0;
 }
 .menu_card .card_content {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  width: 100%;
+  -webkit-animation: normal-size 0.5s ease-in;
+          animation: normal-size 0.5s ease-in;
 }
 .menu_card .card_content .card_title {
   text-overflow: ellipsis;
@@ -436,11 +438,10 @@ button:hover {
   font-size: 16px;
 }
 .menu_card .card_price {
+  margin-left: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
-  padding-top: 25px;
-  padding-left: 15px;
   font-weight: bold;
   transition: transform 0.5s ease-in-out;
 }
@@ -461,7 +462,8 @@ button:hover {
   transition: transform 0.5s ease-in-out;
 }
 .menu_card:hover .card_content {
-  width: 200px;
+  -webkit-animation: resizing 0.5s linear both;
+          animation: resizing 0.5s linear both;
 }
 .menu_card:hover .card_price {
   transform: translateX(-4rem);
@@ -473,6 +475,33 @@ button:hover {
   transform: rotate(-360deg);
 }
 
+@-webkit-keyframes resizing {
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes resizing {
+  to {
+    width: 70%;
+  }
+}
+@-webkit-keyframes normal-size {
+  from {
+    width: 70%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes normal-size {
+  from {
+    width: 70%;
+  }
+  to {
+    width: 100%;
+  }
+}
 header .location {
   display: flex;
   flex-direction: row;
@@ -591,10 +620,6 @@ header .explore p {
   margin: 5px 0 15px 0;
 }
 .grid_menu .grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 15px;
   max-width: 100%;
 }
 

@@ -48,7 +48,7 @@
   }
 
   .grid {
-    @include Grid(1, 3, 15px);
+    // @include Grid(1, 3, 15px);
     max-width: 100%;
   }
 
