@@ -1,0 +1,55 @@
+.container_menu {
+  min-width: 250px;
+  position: relative;
+  z-index: 1;
+  background-color: $background;
+  width: 100%;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+
+  .header_menu {
+    position: relative;
+
+    h1 {
+      @include logo_titles;
+      padding-left: 20px;
+      padding-top: 30px;
+      @include TextEllipsis;
+    }
+
+    i {
+      position: absolute;
+      @include heart;
+      right: 35px;
+      bottom: 5px;
+
+      &:hover {
+        @include heart_hover;
+      }
+    }
+  }
+}
+
+.grid_menu {
+  @include Grid(1, 3, 15px);
+
+  .menu_section {
+    padding: 20px;
+
+    .title {
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    hr {
+      @include hr;
+    }
+  }
+
+  .grid {
+    @include Grid(1, 3, 15px);
+    max-width: 100%;
+  }
+
+}

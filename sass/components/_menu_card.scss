@@ -1,0 +1,75 @@
+.menu_card {
+  @include shadow;
+  background-color: $cards_bkg;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  padding: 15px;
+  flex-wrap: wrap;
+
+  .card_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+    .card_title {
+      @include TextEllipsis;
+      font-size: 16px;
+    }
+
+    .card_description {
+      @include TextEllipsis;
+      font-size: 16px;
+    }
+  }
+
+  .card_price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 25px;
+    padding-left: 15px;
+    font-weight: bold;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .card_check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 22px;
+    background-color: $tertiary;
+    color: $typo_color;
+    width: 4rem;
+    border-radius: 0 15px 15px 0;
+    transition: transform 0.5s ease-in-out;
+    margin: -1rem -5rem -1rem 1rem;
+
+    .fa-circle-check {
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+
+
+  &:hover {
+    .card_content {
+      width: 200px;
+    }
+
+    .card_price {
+      transform: translateX(-4rem);
+    }
+
+    .card_check {
+      transform: translateX(-4rem);
+    }
+
+    .fa-circle-check {
+      transform: rotate(-360deg);
+    }
+  }
+}

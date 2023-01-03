@@ -1,0 +1,25 @@
+@media screen and (min-width: 993px) {
+  .container_index {
+    max-width: 1400px;
+    margin: auto;
+    padding: 25px;
+  }
+
+  .container_menu {
+    max-width: 1400px;
+    margin: auto;
+    padding: 25px;
+  }
+
+  .grid_function {
+    @include Grid(3, 1, 15px);
+  }
+
+  .grid_menu_index {
+    @include Grid(2, 2, 15px);
+  }
+
+  .grid_menu {
+    @include Grid(3, 1, 15px);
+  }
+}

@@ -1,0 +1,47 @@
+.footer {
+  background-color: rgb(42, 49, 45);
+  @include footer_color;
+
+  .footer_logo img {
+    width: 120px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(160deg) brightness(110%) contrast(101%);
+  }
+
+  .footer_collab {
+    padding-top: 15px;
+
+    .footer_content {
+      @include Flexbox(column);
+
+      a {
+        display: inline;
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        i {
+          padding-right: 25px;
+          width: 18px;
+        }
+      }
+    }
+  }
+
+  .footer_mentions {
+    @include Flexbox(column);
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding-bottom: 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

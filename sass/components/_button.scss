@@ -1,0 +1,49 @@
+/*
+* BOUTON INDEX.HTML
+*/
+button {
+  transition-duration: 1s;
+  @include shadow;
+  @include texts;
+  @include buttons_parameters;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 25px;
+  color: $typo_color;
+  height: 50px;
+  border-radius: 40px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($secondary, 70%);
+    box-shadow: 5px 5px 9px rgb(0 0 0 / 40%);
+  }
+}
+
+/*
+* BOUTON DES MENU
+*/
+.button_menu {
+
+  @include Flexbox(row, center);
+  padding: 35px 0 40px 0;
+
+  .order_button {
+    transition-duration: 1s;
+    @include shadow;
+    @include texts;
+    @include buttons_parameters;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 40px;
+    color: $typo_color;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten($primary, 10%);
+      box-shadow: 5px 5px 9px rgb(0 0 0 / 50%);
+    }
+  }
+}

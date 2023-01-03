@@ -21,16 +21,16 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="SCSS/style.css" />
+    <link rel="stylesheet" href="sass/style.css" />
     <title>OhMyFood</title>
   </head>
 
   <body>
-    <div class="loading_spinner hide_me">
+    <!-- <div class="loading_spinner hide_me">
       <div class="spinner"></div>
-    </div>
+    </div> -->
     <div class="page_wrapper">
-      <header>
+      <header class="header">
         <div class="logo_OMF">
           <img src="images/logo/ohmyfood.png" alt="Logo OhMyFood" />
         </div>
@@ -38,7 +38,7 @@
           <i class="fa-solid fa-location-dot"></i>
           <span>Paris, Belleville</span>
         </div>
-        <div class="explore_restaurants">
+        <div class="explore">
           <h1>Réservez le menu qui vous convient</h1>
           <p>
             Découvrez des restaurants d'exception, sélectionnés par nos soins.
@@ -48,9 +48,9 @@
       </header>
 
       <section>
-        <div class="container">
+        <div class="container_index">
           <h2>Fonctionnement</h2>
-          <div class="functioning">
+          <div class="grid_function">
             <div class="functioning_box">
               <div class="numbers_position">
                 <p>1</p>
@@ -82,21 +82,23 @@
         </div>
       </section>
 
-      <section class="couleur">
-        <div class="container">
+      <section class="background">
+        <div class="container_index">
           <h2>Restaurants</h2>
-          <div class="restaurants_grid">
-            <article class="restaurants_card">
+          <div class="grid_menu_index">
+            <article class="card">
               <a href="la_palette_du_gout.html">
-                <div class="new-tag">
-                  <p>Nouveau</p>
-                </div>
-                <div class="image_card">
-                  <img
-                    src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                    alt="logo plat"
-                  />
-                </div>
+                <header class="card_header">
+                  <div class="new-tag">
+                    <p>Nouveau</p>
+                  </div>
+                  <div class="card_image">
+                    <img
+                      src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                      alt="logo plat"
+                    />
+                  </div>
+                </header>
                 <div class="card_content">
                   <div>
                     <h3>La palette du goût</h3>
@@ -106,17 +108,19 @@
                 </div>
               </a>
             </article>
-            <article class="restaurants_card">
+            <article class="card">
               <a href="la_note_enchantee.html">
-                <div class="new-tag">
-                  <p>Nouveau</p>
-                </div>
-                <div class="image_card">
-                  <img
-                    src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                    alt="logo plat"
-                  />
-                </div>
+                <header class="card_header">
+                  <div class="new-tag">
+                    <p>Nouveau</p>
+                  </div>
+                  <div class="card_image">
+                    <img
+                      src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                      alt="logo plat"
+                    />
+                  </div>
+                </header>
                 <div class="card_content">
                   <div>
                     <h3>La note enchantée</h3>
@@ -126,14 +130,16 @@
                 </div>
               </a>
             </article>
-            <article class="restaurants_card">
+            <article class="card">
               <a href="a_la_francaise.html">
-                <div class="image_card">
-                  <img
-                    src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                    alt="logo plat"
-                  />
-                </div>
+                <header class="card_header">
+                  <div class="card_image">
+                    <img
+                      src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                      alt="logo plat"
+                    />
+                  </div>
+                </header>
                 <div class="card_content">
                   <div>
                     <h3>À la française</h3>
@@ -143,14 +149,16 @@
                 </div>
               </a>
             </article>
-            <article class="restaurants_card">
+            <article class="card">
               <a href="le_delice_des_sens.html">
-                <div class="image_card">
-                  <img
-                    src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                    alt="logo plat"
-                  />
-                </div>
+                <header class="card_header">
+                  <div class="card_image">
+                    <img
+                      src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                      alt="logo plat"
+                    />
+                  </div>
+                </header>
                 <div class="card_content">
                   <div>
                     <h3>Le délice des sens</h3>
@@ -163,7 +171,8 @@
           </div>
         </div>
       </section>
-      <footer>
+
+      <footer class="footer">
         <div class="footer_logo">
           <img src="images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood" />
         </div>

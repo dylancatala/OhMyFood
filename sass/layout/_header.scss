@@ -1,0 +1,25 @@
+.header {
+  .logo_OMF {
+    @include Flexbox(row, center, center);
+    width: 100%;
+    padding: 15px 0;
+    img {
+      max-width: 150px;
+    }
+    a {
+      position: absolute;
+      left: 25px;
+      font-size: 20px;
+      color: black;
+    }
+  }
+  .image_menu {
+    width: 100%;
+    height: 200px;
+    img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+  }
+}

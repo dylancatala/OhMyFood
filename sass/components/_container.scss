@@ -1,0 +1,11 @@
+.container_index {
+  padding: 25px;
+
+  &>h2 {
+    padding-bottom: 25px;
+  }
+}
+
+.background {
+  background-color: $background;
+}

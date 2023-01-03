@@ -21,13 +21,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="SCSS/style.css" />
+    <link rel="stylesheet" href="sass/style.css" />
     <title>Menu La palette du goût</title>
   </head>
 
   <body>
     <div class="page_wrapper">
-      <header>
+      <header class="header">
         <div class="logo_OMF">
           <img src="images/logo/ohmyfood.png" alt="Logo OhMyFood" />
           <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
@@ -39,6 +39,7 @@
           />
         </div>
       </header>
+
       <main class="container_menu">
         <div class="header_menu">
           <h1>La palette du goût</h1>
@@ -49,42 +50,36 @@
             <h2 class="title">Entrées</h2>
             <hr />
             <div class="grid">
-              <article class="card p-1">
-                <div class="content">
-                  <div class="left">
-                    <h3 class="card_title">Fricassée d'escargot</h3>
-                    <p class="card_subtitle">Au piment d'Espelette</p>
-                  </div>
-                  <div class="price">25€</div>
-                  <div class="item_check">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </div>
+              <article class="menu_card p-1">
+                <div class="card_content">
+                  <h3 class="card_title">Tartare de poulpe acidulé</h3>
+                  <p class="card_description">
+                    Aux zestes d'orangeAux zestes d'orangeAux zestes d'orange
+                  </p>
+                </div>
+                <div class="card_price">25€</div>
+                <div class="card_check">
+                  <i class="fa-solid fa-circle-check"></i>
                 </div>
               </article>
-              <article class="card p-2">
-                <div class="content">
-                  <div class="left">
-                    <h3 class="card_title">Foie gras de canard mi-cuit</h3>
-                    <p class="card_subtitle">Et ses copeaux de truffe noire</p>
-                  </div>
-                  <div class="price">35€</div>
-                  <div class="item_check">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </div>
+              <article class="menu_card p-1">
+                <div class="card_content">
+                  <h3 class="card_title">Tartare de poulpe acidulé</h3>
+                  <p class="card_description">Aux zestes d'orange</p>
+                </div>
+                <div class="card_price">25€</div>
+                <div class="card_check">
+                  <i class="fa-solid fa-circle-check"></i>
                 </div>
               </article>
-              <article class="card p-3">
-                <div class="content">
-                  <div class="left">
-                    <h3 class="card_title">Œuf au plat</h3>
-                    <p class="card_subtitle">
-                      Assaisonné à la truffe sur lit de caviar
-                    </p>
-                  </div>
-                  <div class="price">20€</div>
-                  <div class="item_check">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </div>
+              <article class="menu_card p-1">
+                <div class="card_content">
+                  <h3 class="card_title">Tartare de poulpe acidulé</h3>
+                  <p class="card_description">Aux zestes d'orange</p>
+                </div>
+                <div class="card_price">25€</div>
+                <div class="card_check">
+                  <i class="fa-solid fa-circle-check"></i>
                 </div>
               </article>
             </div>
@@ -93,44 +88,34 @@
             <h2 class="title">Plats</h2>
             <hr />
             <div class="grid">
-              <article class="card p-4">
-                <div class="content">
-                  <div class="left">
-                    <h3 class="card_title">Filet de boeuf aux herbes</h3>
-                    <p class="card_subtitle">
-                      Accompagné de sa ribambelle de légumes
-                    </p>
-                  </div>
-                  <div class="price">40€</div>
-                  <div class="item_check">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </div>
+              <article class="menu_card p-1">
+                <div class="card_content">
+                  <h3 class="card_title">Tartare de poulpe acidulé</h3>
+                  <p class="card_description">Aux zestes d'orange</p>
+                </div>
+                <div class="card_price">25€</div>
+                <div class="card_check">
+                  <i class="fa-solid fa-circle-check"></i>
                 </div>
               </article>
-              <article class="card p-5">
-                <div class="content">
-                  <div class="left">
-                    <h3 class="card_title">Parmentier de queue de boeuf</h3>
-                    <p class="card_subtitle">
-                      À la truffe noire sur sa purée de panais
-                    </p>
-                  </div>
-                  <div class="price">35€</div>
-                  <div class="item_check">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </div>
+              <article class="menu_card p-1">
+                <div class="card_content">
+                  <h3 class="card_title">Tartare de poulpe acidulé</h3>
+                  <p class="card_description">Aux zestes d'orange</p>
+                </div>
+                <div class="card_price">25€</div>
+                <div class="card_check">
+                  <i class="fa-solid fa-circle-check"></i>
                 </div>
               </article>
-              <article class="card p-6">
-                <div class="content">
-                  <div class="left">
-                    <h3 class="card_title">Filet de turbot</h3>
-                    <p class="card_subtitle">Aux agrumes</p>
-                  </div>
-                  <div class="price">44€</div>
-                  <div class="item_check">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </div>
+              <article class="menu_card p-1">
+                <div class="card_content">
+                  <h3 class="card_title">Tartare de poulpe acidulé</h3>
+                  <p class="card_description">Aux zestes d'orange</p>
+                </div>
+                <div class="card_price">25€</div>
+                <div class="card_check">
+                  <i class="fa-solid fa-circle-check"></i>
                 </div>
               </article>
             </div>
@@ -139,44 +124,34 @@
             <h2 class="title">Desserts</h2>
             <hr />
             <div class="grid">
-              <article class="card p-7">
-                <div class="content">
-                  <div class="left">
-                    <h3 class="card_title">Paris-Brest</h3>
-                    <p class="card_subtitle">Revisité</p>
-                  </div>
-                  <div class="price">18€</div>
-                  <div class="item_check">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </div>
+              <article class="menu_card p-1">
+                <div class="card_content">
+                  <h3 class="card_title">Tartare de poulpe acidulé</h3>
+                  <p class="card_description">Aux zestes d'orange</p>
+                </div>
+                <div class="card_price">25€</div>
+                <div class="card_check">
+                  <i class="fa-solid fa-circle-check"></i>
                 </div>
               </article>
-              <article class="card p-8">
-                <div class="content">
-                  <div class="left">
-                    <h3 class="card_title">Macaron au chocolat d'exception</h3>
-                    <p class="card_subtitle">
-                      Et glace à la vanille de Madagascar
-                    </p>
-                  </div>
-                  <div class="price">22€</div>
-                  <div class="item_check">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </div>
+              <article class="menu_card p-1">
+                <div class="card_content">
+                  <h3 class="card_title">Tartare de poulpe acidulé</h3>
+                  <p class="card_description">Aux zestes d'orange</p>
+                </div>
+                <div class="card_price">25€</div>
+                <div class="card_check">
+                  <i class="fa-solid fa-circle-check"></i>
                 </div>
               </article>
-              <article class="card p-9">
-                <div class="content">
-                  <div class="left">
-                    <h3 class="card_title">Mousse au chocolat</h3>
-                    <p class="card_subtitle">
-                      Au piment d'Espelette et à la truffe noire
-                    </p>
-                  </div>
-                  <div class="price">23€</div>
-                  <div class="item_check">
-                    <i class="fa-solid fa-circle-check"></i>
-                  </div>
+              <article class="menu_card p-1">
+                <div class="card_content">
+                  <h3 class="card_title">Tartare de poulpe acidulé</h3>
+                  <p class="card_description">Aux zestes d'orange</p>
+                </div>
+                <div class="card_price">25€</div>
+                <div class="card_check">
+                  <i class="fa-solid fa-circle-check"></i>
                 </div>
               </article>
             </div>
@@ -186,7 +161,7 @@
           <button class="order_button">Commander</button>
         </div>
       </main>
-      <footer>
+      <footer class="footer">
         <div class="footer_logo">
           <img src="images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood" />
         </div>

@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  @include texts;
+  background-color: white;
+  padding: 0;
+}
+.page_wrapper {
+  min-width: 250px;
+  width: 100%;
+}

@@ -1,0 +1,76 @@
+/*
+* LOADING SPINNER
+*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hidding {
+  to {
+    visibility: hidden;
+  }
+}
+
+.loading_spinner {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: hidding 3s forwards;
+  @include Flexbox(row, center, center);
+  background-color: rgba(white, 40%);
+
+  .spinner {
+    height: 50px;
+    width: 50px;
+    border: 5px solid white;
+    border-color: #9356dc transparent #ff79da transparent;
+    border-radius: 50%;
+    animation: rotate 3s linear;
+  }
+}
+
+/* 
+* BOUCLE @FOR -- ANIMATION SPAWN MENU
+*/
+@for $i from 1 through 9 {
+  .p-#{$i} {
+    animation-delay: $i * 0.1s;
+    // animation-duration: $i * 0.1s;
+  }
+}
+
+.p-1,
+.p-2,
+.p-3,
+.p-4,
+.p-5,
+.p-6,
+.p-7,
+.p-8,
+.p-9 {
+  animation-name: scale-up-center;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

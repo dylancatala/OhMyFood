@@ -111,24 +111,6 @@ body .loading_spinner .spinner {
   text-align: center;
   padding: 10px 0 30px 0;
 }
-.explore_restaurants button {
-  transition-duration: 1s;
-  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.11);
-  font-family: "Roboto", sans-serif;
-  background-color: #9e67e0;
-  border: 0;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 0 25px;
-  color: white;
-  height: 50px;
-  border-radius: 40px;
-  cursor: pointer;
-}
-.explore_restaurants button:hover {
-  background-color: #ae80e5;
-  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.4);
-}
 
 .functioning {
   display: grid;
@@ -371,21 +353,35 @@ header .image_menu img {
 }
 .container_menu .menu_section .grid .card .content .left {
   padding: 15px;
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .container_menu .menu_section .grid .card .content .left .card_title {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 16px;
 }
 .container_menu .menu_section .grid .card .content .left .card_subtitle {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 16px;
 }
 .container_menu .menu_section .grid .card .content .price {
+  background-color: cornflowerblue;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-weight: bold;
   transition: transform 0.5s ease-in-out;
 }
@@ -400,7 +396,6 @@ header .image_menu img {
   width: 4rem;
   border-radius: 0 15px 15px 0;
   margin-right: -4rem;
-  margin-left: 1rem;
   transition: transform 0.5s ease-in-out;
 }
 .container_menu .menu_section .grid .card .content .item_check .fa-circle-check {
@@ -414,104 +409,6 @@ header .image_menu img {
 }
 .container_menu .menu_section .grid .card .content:hover .fa-circle-check {
   transform: rotate(-360deg);
-}
-
-/* 
-* BOUCLE @FOR
-*/
-.p-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-.p-2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.p-3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.p-4 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.p-5 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.p-6 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.p-7 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-
-.p-8 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.p-9 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.p-1,
-.p-2,
-.p-3,
-.p-4,
-.p-5,
-.p-6,
-.p-7,
-.p-8,
-.p-9 {
-  -webkit-animation-name: scale-up-center;
-          animation-name: scale-up-center;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-}
-
-/*
-* BOUTON DES MENU
-*/
-.button_menu {
-  display: flex;
-  justify-content: center;
-  padding: 35px 0 40px 0;
-}
-.button_menu .order_button {
-  transition-duration: 1s;
-  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.11);
-  font-family: "Roboto", sans-serif;
-  background-color: #9e67e0;
-  border: 0;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 0 40px;
-  color: white;
-  height: 50px;
-  border-radius: 40px;
-  cursor: pointer;
-}
-.button_menu .order_button:hover {
-  background-color: #ae80e5;
-  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 993px) {
@@ -620,6 +517,55 @@ header .image_menu img {
   }
 }
 /*
+* BOUTON INDEX.HTML
+*/
+button {
+  transition-duration: 1s;
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.11);
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 25px;
+  color: white;
+  height: 50px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: white;
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.4);
+}
+
+/*
+* BOUTON DES MENU
+*/
+.button_menu {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0 40px 0;
+}
+.button_menu .order_button {
+  transition-duration: 1s;
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.11);
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 40px;
+  color: white;
+  height: 50px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.button_menu .order_button:hover {
+  background-color: #ae80e5;
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+}
+
+/*
 * LOADING SPINNER
 */
 @-webkit-keyframes rotate {
@@ -648,9 +594,101 @@ header .image_menu img {
     visibility: hidden;
   }
 }
-/*
-* Menu spawn animation
+.loading_spinner {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: hidding 3s forwards;
+          animation: hidding 3s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.loading_spinner .spinner {
+  height: 50px;
+  width: 50px;
+  border: 5px solid white;
+  border-color: #9356dc transparent #ff79da transparent;
+  border-radius: 50%;
+  -webkit-animation: rotate 3s linear;
+          animation: rotate 3s linear;
+}
+
+/* 
+* BOUCLE @FOR -- ANIMATION SPAWN MENU
 */
+.p-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.p-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.p-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.p-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.p-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.p-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.p-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.p-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.p-9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.p-1,
+.p-2,
+.p-3,
+.p-4,
+.p-5,
+.p-6,
+.p-7,
+.p-8,
+.p-9 {
+  -webkit-animation-name: scale-up-center;
+          animation-name: scale-up-center;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
 @-webkit-keyframes scale-up-center {
   0% {
     transform: scale(0);
@@ -659,6 +697,7 @@ header .image_menu img {
     transform: scale(1);
   }
 }
+
 @keyframes scale-up-center {
   0% {
     transform: scale(0);
