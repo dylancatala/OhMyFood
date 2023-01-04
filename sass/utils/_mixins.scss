@@ -31,12 +31,17 @@
   }
 }
 
+/*
+* GRID
+*/
 @mixin Grid($cols: 1, $rows: 1, $gap: 0) {
   display: grid;
   grid-template-columns: repeat($cols, 1fr);
   grid-template-rows: repeat($rows, 1fr);
   gap: $gap;
 }
+
+
 
 @mixin TextEllipsis {
   text-overflow: ellipsis;
@@ -47,10 +52,25 @@
 
 
 
-// Buttons specs
+/*
+* BOUTONS INDEX & MENU
+*/
 @mixin buttons_parameters {
-  background-image: linear-gradient($secondary, $primary);
+  background-image: linear-gradient(180deg, $secondary, $primary);
   border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 25px;
+  color: $typo_color;
+  height: 50px;
+  transition-duration: 1s;
+
+  &:hover {
+    background-image: linear-gradient(180deg, lighten($secondary, 5%), lighten($primary, 5%));
+    box-shadow: 5px 5px 9px rgb(0 0 0 / 40%);
+  }
 }
 
 @mixin settings_buttons {
@@ -66,17 +86,6 @@
   background-color: $background;
 }
 
-@mixin new-tag {
-  right: 18px;
-  top: 18px;
-  text-align: center;
-  background-color: $tertiary;
-  color: darken($color: #99e2d0, $amount: 40%);
-  font-weight: bold;
-  border-radius: 5px;
-  height: 35px;
-  width: 100px;
-}
 
 @mixin footer_color {
   color: $typo_color;

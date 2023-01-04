@@ -83,3 +83,25 @@
     transform: scale(1);
   }
 }
+
+
+
+
+/*
+* ELLIPSIS ANIMATION
+*/
+@keyframes resizing {
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes normal-size {
+  from {
+    width: 70%;
+  }
+
+  to {
+    width: 100%;
+  }
+}

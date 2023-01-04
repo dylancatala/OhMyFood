@@ -4,6 +4,12 @@
 /* 
 * Flexbox
 */
+/*
+* GRID
+*/
+/*
+* BOUTONS INDEX & MENU
+*/
 /* REFACTORING */
 /* 
 * Restaurants Styles
@@ -171,6 +177,35 @@ body {
     transform: scale(1);
   }
 }
+/*
+* ELLIPSIS ANIMATION
+*/
+@-webkit-keyframes resizing {
+  to {
+    width: 70%;
+  }
+}
+@keyframes resizing {
+  to {
+    width: 70%;
+  }
+}
+@-webkit-keyframes normal-size {
+  from {
+    width: 70%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes normal-size {
+  from {
+    width: 70%;
+  }
+  to {
+    width: 100%;
+  }
+}
 .header .logo_OMF {
   display: flex;
   flex-direction: row;
@@ -249,21 +284,21 @@ body {
 * BOUTON INDEX.HTML
 */
 button {
-  transition-duration: 1s;
   box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.11);
   font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  background-image: linear-gradient(180deg, #ff79da, #9356dc);
   border: 0;
+  border-radius: 40px;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 700;
   padding: 0 25px;
   color: white;
   height: 50px;
-  border-radius: 40px;
-  cursor: pointer;
+  transition-duration: 1s;
 }
 button:hover {
-  background-color: white;
+  background-image: linear-gradient(180deg, #ff93e1, #a16be0);
   box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.4);
 }
 
@@ -278,22 +313,22 @@ button:hover {
   padding: 35px 0 40px 0;
 }
 .button_menu .order_button {
-  transition-duration: 1s;
   box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.11);
   font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  background-image: linear-gradient(180deg, #ff79da, #9356dc);
   border: 0;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 0 40px;
-  color: white;
-  height: 50px;
   border-radius: 40px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 25px;
+  color: white;
+  height: 50px;
+  transition-duration: 1s;
 }
 .button_menu .order_button:hover {
-  background-color: #ae80e5;
-  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(180deg, #ff93e1, #a16be0);
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.4);
 }
 
 .functioning_box {
@@ -477,33 +512,6 @@ button:hover {
   transform: rotate(-360deg);
 }
 
-@-webkit-keyframes resizing {
-  to {
-    width: 70%;
-  }
-}
-
-@keyframes resizing {
-  to {
-    width: 70%;
-  }
-}
-@-webkit-keyframes normal-size {
-  from {
-    width: 70%;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes normal-size {
-  from {
-    width: 70%;
-  }
-  to {
-    width: 100%;
-  }
-}
 header .location {
   display: flex;
   flex-direction: row;
