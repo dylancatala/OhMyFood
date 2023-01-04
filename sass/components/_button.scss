@@ -2,9 +2,9 @@
 * BOUTON INDEX.HTML
 */
 button {
+  @include buttons_parameters;
   @include shadow;
   @include texts;
-  @include buttons_parameters;
 }
 
 /*
@@ -15,8 +15,8 @@ button {
   padding: 35px 0 40px 0;
 
   .order_button {
+    @include buttons_parameters;
     @include shadow;
     @include texts;
-    @include buttons_parameters;
   }
 }
