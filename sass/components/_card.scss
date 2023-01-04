@@ -3,10 +3,12 @@
   position: relative;
   background-color: white;
   border-radius: 20px;
+
   a {
     text-decoration: none;
     color: black;
   }
+
   .card_header {
     .card_image {
       img {
@@ -17,24 +19,24 @@
         object-fit: cover;
       }
     }
-    .new-tag {
-      position: absolute;
-      @include Flexbox(row, center, center);
-      @include new-tag;
-    }
   }
+
   .card_content {
     @include Flexbox(row, flex-start, center);
     padding: 15px;
+
     div {
       flex: 1;
     }
+
     h3 {
       padding: 0 0 5px;
     }
+
     i {
       @include heart;
       padding: 0 10px;
+
       &:hover {
         @include heart_hover;
       }

@@ -1,0 +1,13 @@
+.new-tag {
+  @include Flexbox(row, center, center);
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  text-align: center;
+  background-color: $tertiary;
+  color: darken($color: #99e2d0, $amount: 40%);
+  font-weight: bold;
+  border-radius: 5px;
+  height: 35px;
+  width: 100px;
+}

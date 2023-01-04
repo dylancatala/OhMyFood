@@ -13,9 +13,6 @@
 /*
 * FUNCTIONING BOX SETTINGS
 */
-/* 
-* NEW TAG MENU INDEX
-*/
 /*
 * MENU STYLES
 */
@@ -39,11 +36,6 @@ body {
 .page_wrapper {
   min-width: 250px;
   width: 100%;
-}
-
-body,
-html {
-  font-family: "Roboto", sans-serif;
 }
 
 /*
@@ -400,22 +392,6 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.card .card_header .new-tag {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  right: 18px;
-  top: 18px;
-  text-align: center;
-  background-color: #99e2d0;
-  color: #278870;
-  font-weight: bold;
-  border-radius: 5px;
-  height: 35px;
-  width: 100px;
-}
 .card .card_content {
   display: flex;
   flex-direction: row;
@@ -523,6 +499,23 @@ button:hover {
 }
 .menu_card:hover .fa-circle-check {
   transform: rotate(-360deg);
+}
+
+.new-tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  text-align: center;
+  background-color: #99e2d0;
+  color: #278870;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 35px;
+  width: 100px;
 }
 
 header .location {
