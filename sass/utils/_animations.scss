@@ -38,6 +38,10 @@
   }
 }
 
+
+
+
+
 /* 
 * BOUCLE @FOR -- ANIMATION SPAWN MENU
 */
@@ -65,6 +69,11 @@
   animation-fill-mode: none;
 }
 
+
+
+/*
+* Menu spawn animation
+*/
 @keyframes scale-up-center {
   0% {
     transform: scale(0);

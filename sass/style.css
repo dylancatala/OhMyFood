@@ -152,6 +152,9 @@ body {
           animation-fill-mode: none;
 }
 
+/*
+* Menu spawn animation
+*/
 @-webkit-keyframes scale-up-center {
   0% {
     transform: scale(0);
@@ -160,7 +163,6 @@ body {
     transform: scale(1);
   }
 }
-
 @keyframes scale-up-center {
   0% {
     transform: scale(0);
