@@ -41,17 +41,6 @@
   gap: $gap;
 }
 
-
-
-@mixin TextEllipsis {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  display: block;
-}
-
-
-
 /*
 * BOUTONS INDEX & MENU
 */
@@ -73,17 +62,13 @@
   }
 }
 
-//Functioning box
+/*
+* FUNCTIONING BOX SETTINGS
+*/
 @mixin func-box-settings {
   height: 75px;
   border-radius: 20px;
   background-color: $background;
-}
-
-
-@mixin footer_color {
-  color: $typo_color;
-  padding: 20px 25px 10px 25px;
 }
 
 
@@ -114,7 +99,12 @@
   margin: 5px 0 15px 0;
 }
 
-
+@mixin TextEllipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
 
 
 /*
