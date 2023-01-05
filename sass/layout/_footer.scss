@@ -3,16 +3,36 @@
   color: $typo_color;
   padding: 20px 25px 10px 25px;
 
-  .footer_logo img {
-    width: 120px;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(160deg) brightness(110%) contrast(101%);
+  @media screen and (min-width: 769px) {}
+
+  .footer_logo {
+    @media screen and (min-width: 769px) {
+      @include Flexbox(column, center);
+    }
+
+    img {
+      width: 120px;
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(160deg) brightness(110%) contrast(101%);
+    }
   }
 
   .footer_collab {
     padding-top: 15px;
 
+    @media screen and (min-width: 769px) {
+      @include Flexbox(row, center);
+    }
+
     .footer_content {
       @include Flexbox(column);
+
+      @media screen and (min-width: 769px) {
+        @include Flexbox(row);
+
+        a {
+          padding-left: 15px;
+        }
+      }
 
       a {
         display: inline;
@@ -35,6 +55,14 @@
   .footer_mentions {
     @include Flexbox(column);
 
+    @media screen and (min-width: 769px) {
+      @include Flexbox(row, center, center);
+
+      a {
+        margin-left: 15px;
+      }
+    }
+
     a {
       text-decoration: none;
       color: white;
@@ -45,4 +73,6 @@
       }
     }
   }
+
+
 }

@@ -17,30 +17,6 @@
   }
 }
 
-.loading_spinner {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  animation: hidding 3s forwards;
-  @include Flexbox(row, center, center);
-  background-color: rgba(white, 40%);
-
-  .spinner {
-    height: 50px;
-    width: 50px;
-    border: 5px solid white;
-    border-color: #9356dc transparent #ff79da transparent;
-    border-radius: 50%;
-    animation: rotate 3s linear;
-  }
-}
-
-
-
-
 
 /* 
 * BOUCLE @FOR -- ANIMATION SPAWN MENU
