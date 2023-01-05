@@ -1,0 +1,28 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "OpenClassRooms Projet 3 : OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/style.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/",
+    "build": "npm run sass && npm run prefix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylancatala/OhMyFood.git"
+  },
+  "author": "Dylan Catala",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/dylancatala/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/dylancatala/OhMyFood#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.57.1"
+  }
+}
