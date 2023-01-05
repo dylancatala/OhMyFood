@@ -4,8 +4,9 @@
   "description": "OpenClassRooms Projet 3 : OhMyFood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./sass/style.scss:./css/style.css --style compressed",
-    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/",
+    "debug": "concurrently \"npm run sass\" \"npm run prefix\"",
+    "sass": "sass ./sass/style.scss:./css/style.css --style compressed -w",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/ -w",
     "build": "npm run sass && npm run prefix"
   },
   "repository": {
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/dylancatala/OhMyFood#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "concurrently": "^7.6.0",
     "postcss": "^8.4.20",
     "postcss-cli": "^10.1.0",
     "sass": "^1.57.1"
