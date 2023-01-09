@@ -16,6 +16,10 @@
     }
   }
 
+
+  /*
+  *  PARTENAIRE / ADD MY RESTAURANT
+  */
   .footer_collab {
     padding-top: 15px;
 
@@ -52,6 +56,11 @@
     }
   }
 
+
+
+  /*
+  * MENTION & MAILTO@ CONTACT
+  */
   .footer_mentions {
     @include Flexbox(column);
 

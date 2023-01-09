@@ -1,4 +1,8 @@
 .header {
+
+  /*
+  * HEADER INDEX
+  */
   .logo_OMF {
     @include Flexbox(row, center, center);
     width: 100%;
@@ -16,6 +20,11 @@
     }
   }
 
+
+
+  /*
+  * HEADER IMG MENU PAGES
+  */
   .image_menu {
     width: 100%;
     height: 200px;

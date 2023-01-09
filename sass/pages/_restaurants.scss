@@ -38,6 +38,9 @@
 
 
 
+/*
+* GRID MENU
+*/
 .grid_menu {
   @include Grid(1, 3, 15px);
 
@@ -67,6 +70,9 @@
 
 
 
+/*
+* MENU CARDS RESTAURANTS 
+*/
 .menu_card {
   @include shadow;
   background-color: $cards_bkg;

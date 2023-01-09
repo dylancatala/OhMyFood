@@ -11,6 +11,9 @@
   font-family: "Roboto", sans-serif;
 }
 
+
+
+
 /* 
 * Flexbox
 */
@@ -31,6 +34,10 @@
   }
 }
 
+
+
+
+
 /*
 * GRID
 */
@@ -40,6 +47,9 @@
   grid-template-rows: repeat($rows, 1fr);
   gap: $gap;
 }
+
+
+
 
 /*
 * BOUTONS INDEX & MENU
@@ -62,6 +72,9 @@
   }
 }
 
+
+
+
 /*
 * FUNCTIONING BOX SETTINGS
 */
@@ -70,6 +83,10 @@
   border-radius: 20px;
   background-color: $background;
 }
+
+
+
+
 
 /*
 * MENU STYLES
@@ -91,14 +108,6 @@
 }
 
 
-/*
-* SHADOW
-*/
-@mixin shadow {
-  box-shadow: 5px 5px 9px rgb(0 0 0 / 11%);
-}
-
-
 
 /*
 * HEART INDEX & MENU
@@ -114,4 +123,13 @@
   background-image: linear-gradient(155deg, #ff79da, #9356dc);
   -webkit-text-fill-color: transparent;
   transition-duration: 0.4s;
+}
+
+
+
+/*
+* SHADOW
+*/
+@mixin shadow {
+  box-shadow: 5px 5px 9px rgb(0 0 0 / 11%);
 }
