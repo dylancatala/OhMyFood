@@ -24,7 +24,6 @@
 @for $i from 1 through 9 {
   .p-#{$i} {
     animation-delay: $i * 0.1s;
-    // animation-duration: $i * 0.1s;
   }
 }
 

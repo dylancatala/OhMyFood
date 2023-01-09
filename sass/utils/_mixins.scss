@@ -111,7 +111,7 @@
 @mixin heart_hover {
   background-clip: text;
   font-weight: 900;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  background-image: linear-gradient(155deg, #ff79da, #9356dc);
   -webkit-text-fill-color: transparent;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
 }
