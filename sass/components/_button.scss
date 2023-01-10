@@ -15,7 +15,7 @@ button {
 */
 .button_menu {
   @include Flexbox(row, center);
-  padding: 35px 0 40px 0;
+  padding: 45px 0 45px 0;
 
   .order_button {
     @include buttons_parameters;
