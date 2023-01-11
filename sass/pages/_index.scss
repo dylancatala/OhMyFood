@@ -89,7 +89,7 @@ section {
           cursor: pointer;
 
           .icon {
-            color: darken($color: cornflowerblue, $amount: 15%);
+            color: $primary;
           }
         }
 
